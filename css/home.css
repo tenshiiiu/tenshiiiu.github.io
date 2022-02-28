@@ -45,6 +45,7 @@
 .btn {
     font-size: medium;
     padding: 10px 35px;
+    border-radius: 5px;
     background-color: transparent;
     border: 1px solid antiquewhite;
     color: antiquewhite;
