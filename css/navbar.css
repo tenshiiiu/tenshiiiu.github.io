@@ -1,0 +1,40 @@
+/* Navbar Section */
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.navbar ul li{
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+
+.navbar ul li a:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    color: black;
+    box-shadow: 0 0 5px antiquewhite, 0 0 10px antiquewhite, 0 0 15px antiquewhite;
+    font-weight: bold;
+    
+    
+
+}

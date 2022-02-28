@@ -1,0 +1,61 @@
+/* Home Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+}
+
+#home::before{
+    content: "";
+    position: relative;
+    top: 0;
+    right: 0;
+    background: url(/img/emma1.gif) no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index : -1;
+    opacity: .9;
+    background-attachment: fixed;
+
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid antiquewhite; */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+
+}
+
+.headings{
+    font-family: 'Poppins';
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.btn {
+    font-size: medium;
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid antiquewhite;
+    color: antiquewhite;
+    outline: none;
+    transition: .6s ease;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: antiquewhite;
+    color: black;
+    box-shadow: 0 0 5px antiquewhite, 0 0 10px antiquewhite, 0 0 15px antiquewhite;
+    font-weight: bold;
+}

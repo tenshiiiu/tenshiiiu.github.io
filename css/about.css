@@ -1,0 +1,77 @@
+/* About Section */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.pic{
+    margin: 20px;
+    display: flex;
+    padding: 0px 30px;
+    justify-content: space-evenly;
+    align-items: center;
+    color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+#pic{
+    display: flex;
+}
+
+
+#pic img{
+    margin: 35px 20px;
+    width: 555px;
+    height: 400px;
+    box-shadow: 0 10px 15px antiquewhite;
+}
+
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    padding: 20px;
+}
+
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.lined{
+    margin-top: 20px;
+    background-color: bisque;
+    box-shadow: 5px 0px 15px 1px antiquewhite ;
+}
+
+#intro ul{
+    padding-left: 20px;
+    list-style-type: square;
+}
+
+.cvbtn{
+    display: flex;
+    justify-content: space-around;
+}
+.download-btn{
+    background-color: antiquewhite;
+    color: brown;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+    font-size: small;
+    text-decoration: none;
+    border-radius:5px;
+    transition: .5s ease;
+}
+
+.download-btn:hover {
+    background-color: burlywood;
+    color: beige;
+    box-shadow: 1px 10px 15px antiquewhite;
+  }
