@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Unit Converter</title>
+
+    <script src="https://kit.fontawesome.com/4ba20ab186.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/unitcn.css">
+
+    <script>
+        "use strict";
+        function convert() {
+            let initial = document.getElementById("initial").value;
+            let final = document.getElementById("final").value;
+            let value = document.getElementById("value").value;
+            let converted;
+            value = parseInt(value);
+
+            switch (initial) {
+                case "cm":
+                    if (final == "cm") converted = value;
+                    else if (final == "m") converted = value / 100;
+                    else converted = value / 100000;
+                    break;
+                case "m":
+                    if (final == "cm") converted = value * 100;
+                    else if (final == "m") converted = value;
+                    else converted = value / 1000;
+                    break;
+                case "km":
+                    if (final == "cm") converted = value * 100000;
+                    else if (final == "m") converted = value * 1000;
+                    else converted = value;
+                    break;
+            }
+
+            document.getElementById("result").innerHTML = value + " " + initial + " to " + final + " is equals to " + converted + " " + final;
+        }
+    </script>
+</head>
+
+<body>
+    <section id="home">
+
+        <a href="/index.html">
+            <div class="homebtn">
+                <i class="fa-solid fa-house-chimney"> HOME</i>
+            </div>
+        </a>
+
+    </section>
+
+    <div id="wrapper">
+        <h2>Unit Converter</h2>
+        <input type="text" id="value" placeholder="Value to convert in integer">
+        <select id="initial" class="input">
+            <option value="cm">centimeter(s)</option>
+            <option value="m">meter(s)</option>
+            <option value="km">kilometer(s)</option>
+        </select>
+        <p style="text-align: center;">to</p>
+        <select id="final" class="input">
+            <option value="cm">centimeter(s)</option>
+            <option value="m">meter(s)</option>
+            <option value="km">kilometer(s)</option>
+        </select>
+        <button onclick="convert()" id="convert">Convert</button>
+        <p id="result"></p>
+    </div>
+</body>
+
+</html>

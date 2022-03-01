@@ -9,6 +9,10 @@
     top: 0;
 }
 
+.navbar h1{
+    margin-left: 50px;
+    letter-spacing: 2px;
+}
 .navbar ul{
     display: flex;
     list-style: none;

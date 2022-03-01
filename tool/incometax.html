@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Income Tax Calculator</title>
+
+    <script src="https://kit.fontawesome.com/4ba20ab186.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/css/card.css">
+    <link rel="stylesheet" href="/css/income.css">
+
+    <script>
+        "use strict";
+        function calc() {
+            let income = document.getElementById("income").value;
+            income = parseFloat(income);
+            let taxed = income * 0.184
+
+            income *= 0.816
+
+            document.getElementById("result").innerHTML = "Net income = " + income.toFixed(2) + "<br>Amount Taxed = " + taxed.toFixed(2);
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <section id="home">
+
+        <a href="/index.html">
+            <div class="homebtn">
+                <i class="fa-solid fa-house-chimney"> HOME</i>
+            </div>
+        </a>
+
+    </section>
+
+    <div id="wrapper">
+        <h2>Income Tax Calculator</h2>
+        <p>
+            <input type="text" id="income" class="input" placeholder="7000">
+        </p>
+        <p>
+            <button onclick="calc()" id="button">Evaluate</button>
+        </p>
+        <p id="result"></p>
+    </div>
+
+
+
+</body>
+
+</html>

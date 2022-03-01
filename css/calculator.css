@@ -1,0 +1,141 @@
+body{
+    margin: 0;
+    padding:0;
+    line-height: 0.5;
+    font-family: sans-serif;
+    opacity: 2;
+    background:linear-gradient(to bottom,#fdfdfd,#ffd57c);
+    
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0, 0.5);
+    height: 50px;
+}
+
+.homebtn{
+    box-sizing: border-box;
+    padding: 10px 10px 10px 10px;
+    letter-spacing: 3px;
+    background-color: burlywood;
+    border-radius: 20px;
+    transition: .5s ease;
+    color: black;
+}
+
+.homebtn:hover{
+    color:antiquewhite;
+    box-shadow: 0px 7px 15px antiquewhite;
+    cursor: pointer;
+}
+.calci{
+    width: 300px;
+    padding-top: 50px;
+    padding-bottom: 50;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transition:0.25px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+#zero{
+
+height: 55;
+width: 116;
+font-size: 20;
+    font-family: sans-serif;
+    font-weight: 300;
+
+}
+
+#display{
+    
+    border:none;
+    background: white;
+    border-radius: 30px;
+    width: 245;
+    font-size: 20;
+    font-family: sans-serif;
+    font-weight: 300;
+    height: 60;
+    margin: auto;
+    border:2px solid white(5, 218, 255, 0.726);
+    color: black;
+
+
+
+}
+.button{
+    width: 55;
+    height: 55;
+    padding-top: -1;
+    font-size: 20;
+    border: none;
+    background: antiquewhite;
+    font-family: sans-serif;
+    font-weight: 300;
+    border:0;
+    border-radius: 30px;
+    margin: 1.5;
+    transition:0.5s ease;
+    
+    
+}
+
+h1{
+    margin-top: 300px;
+    margin-left: 100px;
+    font-family: sans-serif;
+
+    font-size:50;
+   
+    text-decoration: underline;
+
+color: white;
+text-transform: uppercase;
+font-weight: 700;}
+
+h2{
+
+    color: white;
+    margin-top: -1px;
+    font-family: sans-serif;
+    margin-left: 438px;
+}
+.operator{
+    width: 55;
+    height: 55;
+    padding-top: -1;
+    font-size: 20;
+    text-align: center;
+    color: black;
+    border: none;
+    background: bisque;
+    font-family: sans-serif;
+    font-weight: 500;
+    border:0;
+    border-radius: 30px;
+    margin: 1.5;
+    transition:0.5s ease;
+    cursor:pointer;
+    
+    
+    
+}
+
+
+.operator:hover{
+    background: chocolate;
+    box-shadow: 0px 5px 15px antiquewhite;
+    color: antiquewhite;
+}
+
+.button:hover{
+    background: burlywood;
+    box-shadow: 0px 5px 15px antiquewhite;
+    color: antiquewhite;
+}
